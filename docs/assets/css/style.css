@@ -1,0 +1,290 @@
+/* Reset de margens e paddings */
+body, h1, h2, h3, h4, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adicionando Roxborough CF.ttf */
+@font-face {
+  font-family: 'Roxborough CF';
+  src: url('../fonts/RoxboroughCF-Regular.ttf') format('truetype');
+}
+
+/* Estilos gerais do corpo */
+body {
+  font-family: 'Roxborough CF', serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos dos Cabecalhos */
+h1, h2, h3, h4 {
+  margin: 20px 0px 5px 0px;
+}
+
+/* Estilos dos parágrafos */
+p {
+  margin: 3px 0px;
+  text-align: justify;
+}
+
+/* Estilos das listas, faça algo legal e criativo */
+ul {
+  list-style-type: square;
+  margin: 0px 0px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inner-container {
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.top-logo {
+  max-width: calc(100% - 40px);
+  padding: 20px;
+}
+
+.top-navbar {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #81330fd0;
+  border-radius: 10px;
+  margin: 10px 10px 40px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.top-navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.3em;
+  transition: color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.top-navbar a:hover {
+  color: #ffbd59;
+  transition: color 0.3s ease-in-out;
+}
+
+.hover-link {
+  color: #81330fd0;
+  text-decoration: none;
+}
+
+.hover-link:hover {
+  color: #ffbd59;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+
+.top-navbar a.active {
+  color: #ffbd59;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos do rodapé */
+.footer {
+  background-color: #81330fd0;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.footer-content {
+  line-height: 2;
+}
+
+.footer-content p {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:last-child {
+  margin-right: 0;
+}
+
+.footer-links a:hover {
+  color: #ffbd59;
+  transition-duration: 0.3s;
+}
+
+.project-buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.project-buttons a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #81330fd0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-buttons a:first-child {
+  margin: 0 10px 0 0;
+}
+
+.project-buttons a:hover {
+  background-color: #ffbd59;
+}
+
+.callout {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden; /* Adicionado para garantir que os elementos filhos não "saiam" do contêiner */
+}
+
+.callout-header {
+  background-color: #81330fd0;
+  padding: 5px 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.callout-title {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.show-hide-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto; /* Adicionado para alinhar corretamente o botão */
+}
+
+.callout-container {
+  padding: 10px; /* Aumentado o padding para melhor espaçamento */
+}
+
+.callout-container p {
+  color: #333;
+  margin: 0; /* Adicionado para remover margens adicionais */
+}
+
+@media (max-width: 600px) {
+  .top-logo {
+    max-width: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .top-navbar {
+    padding: 5px 10px;
+    margin: 5px auto 40px auto;
+    justify-content: center;
+  }
+
+  .top-navbar a {
+    margin: 0 10px;
+  }
+
+  .top-navbar a:first-child {
+    margin-left: 0;
+  }
+
+  .top-navbar a:last-child {
+    margin-right: 0;
+  }
+
+  .footer {
+    margin-top: 30px;
+    padding: 5px;
+  }
+
+  .gallery {
+    grid-gap: 10px;
+  }
+
+  .gallery img {
+    max-height: 150px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-buttons a {
+    margin: 5px 0;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .project-buttons a:first-child {
+    margin: 0 0 5px 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .gallery img {
+    height: 400px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-content {
+    line-height: 3;
+  }
+}
