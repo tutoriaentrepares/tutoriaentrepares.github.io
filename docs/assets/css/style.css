@@ -270,6 +270,7 @@ ul {
   border-radius: 10px;
   margin: 40px 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  transition: background-color 0.3s ease-in-out;
   align-items: center;
   justify-content: center; /* Add this line to align items horizontally */
 }
@@ -279,13 +280,12 @@ ul {
   text-decoration: none;
   margin: 0 20px;
   font-size: 1.3em;
-  transition: color 0.3s ease-in-out;
   border-radius: 5px;
 }
 
-.divbox a:hover {
-  color: #ffbd59;
-  transition: color 0.3s ease-in-out;
+.divbox:hover {
+  background-color: #ffbd59;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media (max-width: 600px) {
